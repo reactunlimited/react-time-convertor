@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'react-time-convertor'
+import ReactTimeConvertor from 'react-time-convertor'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <ReactTimeConvertor timestamp='1575439866' style={{color:'red'}}/>
       </div>
     )
   }

@@ -15,12 +15,12 @@ npm install --save react-time-convertor
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-time-convertor'
+import ReactTimeConvertor from 'react-time-convertor'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <ReactTimeConvertor timestamp="" format="" />
     )
   }
 }
