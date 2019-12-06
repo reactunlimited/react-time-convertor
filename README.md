@@ -11,6 +11,13 @@ npm install --save react-time-convertor
 ```
 
 ## Usage
+It uses three props as `timestamp`, `type` and `style`.
+
+`timestamp` accepts timestamp as input e.g. 1575439866
+
+`type` accepts `chat | general`
+
+`style` accepts styling for timestamp
 
 ```jsx
 import React, { Component } from 'react'
@@ -20,7 +27,7 @@ import ReactTimeConvertor from 'react-time-convertor'
 class Example extends Component {
   render () {
     return (
-      <ReactTimeConvertor timestamp="" format="" />
+      <ReactTimeConvertor timestamp="1575439866" format="chat | general" style={{color:'red'}} />
     )
   }
 }
