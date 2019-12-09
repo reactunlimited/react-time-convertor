@@ -6,7 +6,9 @@ export default class App extends Component {
   render () {
     return (
       <div>
-        <ReactTimeConvertor timestamp='1575439866' style={{color:'red'}}/>
+        <ReactTimeConvertor timestamp='1575439866' type="chat" style={{color:'red'}}/>
+        <br/>
+        <ReactTimeConvertor type="greet" style={{color:'red'}}/>
       </div>
     )
   }

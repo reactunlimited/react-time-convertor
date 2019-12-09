@@ -20,6 +20,25 @@ export default function ReactTimeConvertor(props){
   function useConvert(props){
     const {timestamp, type} = props;
     console.log(isNaN(timestamp)+" checked here", moment());
+    if(type=='greet'){
+      let m = moment();
+      let wish = "Good ";
+      let hh = parseInt(m.format('HH'));
+      let mm = parseInt(m.format('mm'));
+      if(hh>=0 && hh<12){
+        wish+="Morning";
+      }
+      else if(hh==12 && mm==0){
+        wish+="Noon";
+      }
+      else if(hh>=12 && hh<17){
+        wish+=" Afternoon";
+      }
+      else{
+        wish+=" Evening";
+      }
+      return wish;
+    }
     if(isNaN(timestamp)){
       return "INVALID";
     }else{
