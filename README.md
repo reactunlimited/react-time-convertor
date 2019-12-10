@@ -11,13 +11,17 @@ npm install --save react-time-convertor
 ```
 
 ## Usage
-It uses three props as `timestamp`, `type` and `style`.
+It uses three props as `timestamp`, `type`, `style` and `platform`.
 
 `timestamp` accepts timestamp as input e.g. 1575439866
 
 `type` accepts `chat | general | greet`
 
 `style` accepts styling for timestamp
+
+`platform` accepts `mobile` (optional, only used in react-native)
+
+
 
 while you're using type `greet`, no need to pass timestamp. It will return a wish string as Good Morning | Good Noon | Good Afternoon | Good Evening.
 
@@ -33,6 +37,22 @@ class Example extends Component {
     )
   }
 }
+```
+
+## Usage (for react-native)
+platform type mobile returns only string and must be used with `<Text>` in react-native.
+
+```jsx
+...
+
+import ReactTimeConvertor from 'react-time-convertor'
+
+...
+<Text>
+   <ReactTimeConvertor timestamp="1575439866" format="chat | general | greet" platform = "mobile" />
+   
+</Text>
+
 ```
 
 ## License

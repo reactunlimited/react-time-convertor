@@ -9,6 +9,8 @@ export default class App extends Component {
         <ReactTimeConvertor timestamp='1575439866' type="chat" style={{color:'red'}}/>
         <br/>
         <ReactTimeConvertor type="greet" style={{color:'red'}}/>
+        <br/>
+        <ReactTimeConvertor type="greet" style={{color:'red'}} platform="mobile"/>
       </div>
     )
   }

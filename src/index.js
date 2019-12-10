@@ -7,7 +7,11 @@ import styles from './styles.css'
 
 export default function ReactTimeConvertor(props){
   const output = useConvert(props);
-  const {style} = props;
+  const {style,platform} = props;
+  if(platform=='mobile'){
+    
+    return output;
+  }
     return (
       <div 
       // className={styles.test} 
